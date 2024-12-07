@@ -1,43 +1,43 @@
 @use "../../../../styles/variables" as vars;
 
-header{
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 70px;
+  border-bottom: 1px solid vars.$gold-color;
+  .menu {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 40px;
-    height: 70px;
-    border-bottom: 1px solid vars.$gold-color;
-    .menu{
-        display: flex;
-        align-items: center;
-        gap: 50px;
-    }
-    .nav nav{
-        display: flex;
-        align-items: center;
-        gap: 25px;
+    gap: 50px;
+  }
+  .nav nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
 
-        a{
-            text-decoration: none;
-            color: vars.$text-gray-color;
-            cursor: pointer;
-            &:hover{
-                color: vars.$text-dark-color;
-                text-decoration: underline;
-            }
-            &.active{
-                color: vars.$primary-color;
-                text-decoration: underline;
-            }
-        }
+    a {
+      text-decoration: none;
+      color: vars.$text-gray-color;
+      cursor: pointer;
+      &:hover {
+        color: vars.$text-dark-color;
+        text-decoration: underline;
+      }
+      &.active {
+        color: vars.$primary-color;
+        text-decoration: underline;
+      }
     }
+  }
 
-    .options{
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        vino-icon{
-            cursor: pointer;
-        }
+  .options {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    vino-icon {
+      cursor: pointer;
     }
+  }
 }

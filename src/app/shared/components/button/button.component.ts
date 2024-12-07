@@ -1,10 +1,10 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input } from "@angular/core";
 
 @Component({
-  selector: 'vino-button',
+  selector: "vino-button",
   imports: [],
-  templateUrl: './button.component.html',
-  styleUrl: './button.component.scss'
+  templateUrl: "./button.component.html",
+  styleUrl: "./button.component.scss",
 })
 export class ButtonComponent {
   @Input({ required: true }) type!: "primary" | "secundary";
