@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "format": "prettier --write 'src/**/*.{ts,html,css,scss}'",
-    "git": "npm run format && git add . && git commit -m \"$npm_config_message\""
+    "git": "npm run format && git add . && git commit -m "
   },
   "private": true,
   "dependencies": {
