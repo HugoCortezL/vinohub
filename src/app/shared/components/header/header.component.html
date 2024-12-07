@@ -1,0 +1,20 @@
+<header>
+    <div class="menu">
+        <div class="logo">
+            <img src="assets/images/logo-full.svg" alt="logo">
+        </div>
+        <div class="nav">
+            <nav>
+                <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Início</a>
+                <a routerLink="/paises" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: false }">Países</a>
+                <a routerLink="/uvas" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: false }">Uvas</a>
+            </nav>
+        </div>
+    </div>
+    <div class="options">
+        <vino-icon icon="search" />
+        <vino-icon icon="notification" />
+        <vino-button type="primary" text="Login" routerLink="/auth/login"/>
+        <vino-button type="secundary" text="Registrar" routerLink="/auth/register"/>
+    </div>
+</header>
