@@ -10,7 +10,4 @@ import { ButtonComponent } from '../button/button.component';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  redirect(path: string){
-    
-  }
 }
