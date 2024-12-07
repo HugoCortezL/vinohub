@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+@use './styles/variables' as vars;
+
+body {
+    font-family: vars.$primary-font;
+    background-color: vars.$background-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: vars.$heading-font;
+    color: vars.$text-dark-color;
+}
+
+* {
+    font-family: vars.$primary-font;
+    font-weight: normal;
+    color: vars.$text-dark-color;
+    padding: 0;
+    margin: 0;
+}
+
+strong {
+    font-family: vars.$primary-font;
+    font-weight: bold;
+}
