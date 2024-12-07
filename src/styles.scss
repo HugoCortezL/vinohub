@@ -1,8 +1,8 @@
-@use './styles/variables' as vars;
+@use "./styles/variables" as vars;
 
 body {
-    font-family: vars.$primary-font;
-    background-color: vars.$background-color;
+  font-family: vars.$primary-font;
+  background-color: vars.$background-color;
 }
 
 h1,
@@ -11,19 +11,19 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: vars.$heading-font;
-    color: vars.$text-dark-color;
+  font-family: vars.$heading-font;
+  color: vars.$text-dark-color;
 }
 
 * {
-    font-family: vars.$primary-font;
-    font-weight: normal;
-    color: vars.$text-dark-color;
-    padding: 0;
-    margin: 0;
+  font-family: vars.$primary-font;
+  font-weight: normal;
+  color: vars.$text-dark-color;
+  padding: 0;
+  margin: 0;
 }
 
 strong {
-    font-family: vars.$primary-font;
-    font-weight: bold;
+  font-family: vars.$primary-font;
+  font-weight: bold;
 }
