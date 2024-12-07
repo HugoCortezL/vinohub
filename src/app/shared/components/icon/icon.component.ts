@@ -2,7 +2,7 @@ import { CommonModule } from "@angular/common";
 import { Component, Input } from "@angular/core";
 
 @Component({
-  selector: "app-icon",
+  selector: "vino-icon",
   imports: [CommonModule],
   templateUrl: "./icon.component.html",
   styleUrl: "./icon.component.scss",
