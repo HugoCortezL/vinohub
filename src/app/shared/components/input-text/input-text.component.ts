@@ -12,4 +12,5 @@ export class InputTextComponent {
 
   @Input({ required: true }) placeholder!: string;
   @Input() type?: string = "text";
+
 }

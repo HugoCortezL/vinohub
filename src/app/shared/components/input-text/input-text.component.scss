@@ -4,9 +4,10 @@
   display: flex;
   align-items: center;
   gap: 0;
-  vino-icon {
-    padding: 10px;
-    border: 1px solid green;
+  ::ng-deep vino-icon {
+    padding: 8px;
+    border: 1px solid vars.$gold-color;
+    border-right: 0px;
   }
   input {
     padding: 0 10px;
