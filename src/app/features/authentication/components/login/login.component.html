@@ -1,17 +1,27 @@
 <div class="login">
   <h1>Login</h1>
-  <vino-input-text placeholder="Digite seu email">
-    <vino-icon icon="user"> </vino-icon>
-  </vino-input-text>
-  <vino-input-text placeholder="Digite sua senha" type="password">
-    <vino-icon icon="lock"> </vino-icon>
-  </vino-input-text>
-  <p>Esqueceu a senha?</p>
-  <vino-button type="primary" text="Login" />
-  <div class="divisor-container">
-    <div class="divisor"></div>
-    <p>or</p>
-    <div class="divisor"></div>
-  </div>
-  <vino-button type="secundary" text="Register" />
+  <section>
+    <form>
+      <vino-input-text placeholder="Digite seu email">
+        <vino-icon icon="user" color="#a1a1a1"> </vino-icon>
+      </vino-input-text>
+      <vino-input-text placeholder="Digite sua senha" type="password">
+        <vino-icon icon="lock" color="#a1a1a1"> </vino-icon>
+      </vino-input-text>
+    </form>
+    <span>Esqueceu a senha?</span>
+    <div class="buttons">
+      <vino-button type="primary" text="Fazer login" />
+      <div class="divisor-container">
+        <div class="divisor"></div>
+        <span>ou</span>
+        <div class="divisor"></div>
+      </div>
+      <vino-button
+        type="secundary"
+        text="Quero me registrar"
+        routerLink="/{{ authRoutes.BaseRoute }}/{{ authRoutes.ResgisterRoute }}"
+      />
+    </div>
+  </section>
 </div>

@@ -14,7 +14,11 @@
   <div class="options">
     <vino-icon icon="search" />
     <vino-icon icon="notification" />
-    <vino-button type="primary" text="Login" routerLink="/auth/login" />
-    <vino-button type="secundary" text="Registrar" routerLink="/auth/register" />
+    <vino-button type="primary" text="Login" routerLink="/{{ authRoutes.BaseRoute }}/{{ authRoutes.LoginRoute }}" />
+    <vino-button
+      type="secundary"
+      text="Registrar"
+      routerLink="/{{ authRoutes.BaseRoute }}/{{ authRoutes.ResgisterRoute }}"
+    />
   </div>
 </header>

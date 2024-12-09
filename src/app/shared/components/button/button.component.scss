@@ -7,9 +7,10 @@ button {
   border-image: linear-gradient(to bottom right, #7b2c34, #a4464f) 1;
   font-size: 16px;
   transition: transform 0.2s;
+  width: 100%;
 
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 }
 

@@ -3,7 +3,7 @@ import { IconComponent } from "../icon/icon.component";
 
 @Component({
   selector: "vino-input-text",
-  imports: [IconComponent],
+  imports: [],
   templateUrl: "./input-text.component.html",
   styleUrl: "./input-text.component.scss",
 })
@@ -12,5 +12,4 @@ export class InputTextComponent {
 
   @Input({ required: true }) placeholder!: string;
   @Input() type?: string = "text";
-
 }
