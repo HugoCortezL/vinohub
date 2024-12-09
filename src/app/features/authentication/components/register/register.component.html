@@ -2,26 +2,23 @@
   <h1>Registrar-se</h1>
   <section>
     <form>
-      <vino-input-text placeholder="Digite seu email">
+      <vino-input-text placeholder="Digite seu email" [formControl]="form.controls['email']">
         <vino-icon icon="user" color="#a1a1a1"> </vino-icon>
       </vino-input-text>
-      <vino-input-text placeholder="Digite sua senha" type="password">
+      <vino-input-text placeholder="Digite sua senha" type="password" [formControl]="form.controls['password']">
         <vino-icon icon="lock" color="#a1a1a1"> </vino-icon>
       </vino-input-text>
     </form>
     <span>Esqueceu a senha?</span>
     <div class="buttons">
-      <vino-button type="primary" text="Registrar-se" />
+      <vino-button type="primary" text="Registrar-se" (click)="register()" />
       <div class="divisor-container">
         <div class="divisor"></div>
         <span>ou</span>
         <div class="divisor"></div>
       </div>
-      <vino-button
-        type="secundary"
-        text="Já tenho uma conta"
-        routerLink="/{{ authRoutes.BaseRoute }}/{{ authRoutes.LoginRoute }}"
-      />
+      <vino-button type="secundary" text="Já tenho uma conta"
+        routerLink="/{{ authRoutes.BaseRoute }}/{{ authRoutes.LoginRoute }}" />
     </div>
   </section>
 </div>
