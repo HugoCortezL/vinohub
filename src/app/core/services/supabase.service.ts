@@ -6,7 +6,7 @@ import { environment } from '../../../environments/environments';
   providedIn: 'root'
 })
 export class SupabaseService {
-  private static supabase = createClient(environment.supabaseUrl, environment.supabaseKey, {
+  private static supabase = createClient(process.env['SUPABASE_URL'] ?? environment.supabaseUrl, process.env['SUPABASE_ANON_KEY'] ?? environment.supabaseKey, {
     auth: {
       persistSession: true,
       autoRefreshToken: false,
