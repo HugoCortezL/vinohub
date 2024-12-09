@@ -2,16 +2,16 @@
   <h1>Login</h1>
   <section>
     <form>
-      <vino-input-text placeholder="Digite seu email">
+      <vino-input-text placeholder="Digite seu email" [formControl]="form.controls['email']">
         <vino-icon icon="user" color="#a1a1a1"> </vino-icon>
       </vino-input-text>
-      <vino-input-text placeholder="Digite sua senha" type="password">
+      <vino-input-text placeholder="Digite sua senha" type="password" [formControl]="form.controls['password']">
         <vino-icon icon="lock" color="#a1a1a1"> </vino-icon>
       </vino-input-text>
     </form>
     <span>Esqueceu a senha?</span>
     <div class="buttons">
-      <vino-button type="primary" text="Fazer login" />
+      <vino-button type="primary" text="Fazer login" (click)="login()" />
       <div class="divisor-container">
         <div class="divisor"></div>
         <span>ou</span>
