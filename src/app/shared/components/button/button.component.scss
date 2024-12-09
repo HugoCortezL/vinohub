@@ -1,25 +1,26 @@
 @use "../../../../styles/variables" as vars;
 
 button {
-    padding: 10px 15px;
-    border: 1px solid vars.$primary-color;
-    cursor: pointer;
-    border-image: linear-gradient(to bottom right, #7b2c34, #a4464f) 1;
-    font-size: 16px;
-    transition: transform 0.2s;
+  padding: 10px 15px;
+  border: 1px solid vars.$primary-color;
+  cursor: pointer;
+  border-image: linear-gradient(to bottom right, #7b2c34, #a4464f) 1;
+  font-size: 16px;
+  transition: transform 0.2s;
+  width: 100%;
 
-    &:hover {
-        transform: scale(1.1);
-    }
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 button.primary {
-    color: vars.$text-light-color;
-    background-color: vars.$primary-color;
-    background-image: linear-gradient(to bottom right, vars.$primary-color, vars.$primary-light-color);
+  color: vars.$text-light-color;
+  background-color: vars.$primary-color;
+  background-image: linear-gradient(to bottom right, vars.$primary-color, vars.$primary-light-color);
 }
 
 button.secundary {
-    color: vars.$primary-color;
-    background-color: vars.$background-color;
+  color: vars.$primary-color;
+  background-color: vars.$background-color;
 }

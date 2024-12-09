@@ -1,0 +1,25 @@
+@use "../../../../styles/variables" as vars;
+
+.input-text {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  ::ng-deep vino-icon {
+    padding: 8px;
+    border: 1px solid vars.$gold-color;
+    border-right: 0px;
+    color: #fff;
+  }
+  input {
+    padding: 0 10px;
+    border: 1px solid vars.$gold-color;
+    background-color: transparent;
+    height: 40px;
+    flex: 1;
+    outline: none;
+    color: vars.$text-dark-color;
+    &::placeholder {
+      color: vars.$text-gray-color;
+    }
+  }
+}
